@@ -1,34 +1,25 @@
 # Flot [![Build status](https://travis-ci.org/flot/flot.png)](https://travis-ci.org/flot/flot)
 
-## About ##
 
-Flot is a Javascript plotting library for jQuery.  
-Read more at the website: <http://www.flotcharts.org/>
+##关于##
 
-Take a look at the the examples in examples/index.html; they should give a good
-impression of what Flot can do, and the source code of the examples is probably
-the fastest way to learn how to use Flot.
+Flot是一款基于jquery的图表绘制Javascript类库。     
+请到官网了解更多：<http://www.flotcharts.org/>。
 
+##使用##
 
-## Installation ##
-
-Just include the Javascript file after you've included jQuery.
-
-Generally, all browsers that support the HTML5 canvas tag are
-supported.
-
-For support for Internet Explorer < 9, you can use [Excanvas]
-[excanvas], a canvas emulator; this is used in the examples bundled
-with Flot. You just include the excanvas script like this:
+在引入jQuery文件后引入该类库Javascript文件即可。  
+所有支持HTML5 canvas标签的浏览器都支持该控件。  
+为了让低版本（IE<9）支持,使用[Excanvas],一个canvas模拟器，可以让IE支持canvas; 你只需如下引入excanvas脚本文件即可:
 
 ```html
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
 ```
 
-If it's not working on your development IE 6.0, check that it has
-support for VML which Excanvas is relying on. It appears that some
-stripped down versions used for test environments on virtual machines
-lack the VML support.
+如果在IE6上没有工作，检查是否支持VML，excanvas使得IE能通过VML支持Canvas标签。当在
+在不支持VML的虚拟机上的测试环境的精简版本会出现上述情况。
+
+
 
 You can also try using [Flashcanvas][flashcanvas], which uses Flash to
 do the emulation. Although Flash can be a bit slower to load than VML,

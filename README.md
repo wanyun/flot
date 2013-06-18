@@ -54,31 +54,21 @@ charts because of performance improvements in event handling.
 $.plot($("#placeholder"), data, options);
 ```
 
-这里，data是data series的一个数组
-Here, data is an array of data series and options is an object with
-settings if you want to customize the plot. Take a look at the
-examples for some ideas of what to put in or look at the 
-[API reference](API.md). Here's a quick example that'll draw a line 
-from (0, 0) to (1, 1):
+这里，data是data series的一个数组.options是一个设置参数的集合，我们可以设置该集合的值来实现定制化。
+下面我们看些示例或者到[API reference](API.md)。下面我们将在点(0, 0)和 (1, 1)之间画一条直线:
 
 ```js
 $.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });
 ```
 
-The plot function immediately draws the chart and then returns a plot
-object with a couple of methods.
+plot函数立即画出图表，返回包含一些方法的plot对象。
 
 
-## What's with the name? ##
+## Flot命名 ##
 
-First: it's pronounced with a short o, like "plot". Not like "flawed".
-
-So "Flot" rhymes with "plot".
-
-And if you look up "flot" in a Danish-to-English dictionary, some of
-the words that come up are "good-looking", "attractive", "stylish",
-"smart", "impressive", "extravagant". One of the main goals with Flot
-is pretty looks.
+flot 跟plot发音相似  /plɒt/。 
+flot在丹麦语中意为“漂亮的”、“时髦的”、“吸引人的”、“令人着迷的”。  
+Flot的最重要的目标之一就是看起来十分漂亮。
 
 
 ## 示例说明 ##

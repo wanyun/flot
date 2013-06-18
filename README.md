@@ -39,25 +39,22 @@ charts because of performance improvements in event handling.
 <div id="placeholder"></div>
 ```
 
-你需要设置div的宽和高，否则plot类库将不知道图表的如何缩放。你可以像下面使用内联方式设置宽和高：
+你需要设置div的宽和高，否则plot类库将不知道图表的如何缩放。你可以像下面使用内联方式设置width、height：
 
 ```html
 <div id="placeholder" style="width:600px;height:300px"></div>
 ```
 
-You can also do it with an external stylesheet. Make sure that the
-placeholder isn't within something with a display:none CSS property -
-in that case, Flot has trouble measuring label dimensions which
-results in garbled looks and might have trouble measuring the
-placeholder dimensions which is fatal (it'll throw an exception).
+你也可以使用外部样式。要确保placeholder的div标签不包含在CSS属性为display:none的元素中。
+这样Flot测量标签的大小存在问题导致图像混乱；同样测量placeholder的div元素的存在问题将是致命的(将会抛出异常)。  
 
-Then when the div is ready in the DOM, which is usually on document
-ready, run the plot function:
+当div在DOM中创建成功，文档也加载好了，运行plot的初始化函数：
 
 ```js
 $.plot($("#placeholder"), data, options);
 ```
 
+这里，data是data series的一个数组
 Here, data is an array of data series and options is an object with
 settings if you want to customize the plot. Take a look at the
 examples for some ideas of what to put in or look at the 
@@ -84,13 +81,10 @@ the words that come up are "good-looking", "attractive", "stylish",
 is pretty looks.
 
 
-## Notes about the examples ##
+## 示例说明 ##
 
-In order to have a useful, functional example of time-series plots using time
-zones, date.js from [timezone-js][timezone-js] (released under the Apache 2.0
-license) and the [Olson][olson] time zone database (released to the public
-domain) have been included in the examples directory.  They are used in
-examples/axes-time-zones/index.html.
+为了展示一个有用的时序图示例功能，使用了时区，引用[timezone-js][timezone-js]（Apache 2许可证发布）中date.js文件
+和[Olson][olson]奥尔森时区数据库都已包含在实例目录。我们在示例“examples/axes-time-zones/index.html”使用了。
 
 
 [excanvas]: http://code.google.com/p/explorercanvas/

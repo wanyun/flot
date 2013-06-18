@@ -31,17 +31,15 @@ You need at least jQuery 1.2.6, but try at least 1.3.2 for interactive
 charts because of performance improvements in event handling.
 
 
-## Basic usage ##
+## 基本语法 ##
 
-Create a placeholder div to put the graph in:
+创建id为placeholder的div来放入图表：
 
 ```html
 <div id="placeholder"></div>
 ```
 
-You need to set the width and height of this div, otherwise the plot
-library doesn't know how to scale the graph. You can do it inline like
-this:
+你需要设置div的宽和高，否则plot类库将不知道图表的如何缩放。你可以像下面使用内联方式设置宽和高：
 
 ```html
 <div id="placeholder" style="width:600px;height:300px"></div>
